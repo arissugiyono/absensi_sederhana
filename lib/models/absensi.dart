@@ -10,7 +10,7 @@ class Absensi {
     _nama = map['nama'];
     _status_hadir = map['status_hadir'];
   }
-  int? get id => _id!;
+  int? get id => _id;
   String get nama => _nama!;
   String get status_hadir => _status_hadir!;
 
