@@ -96,7 +96,7 @@ class _homePageState extends State<homePage> {
   }
 
   void _deleteAbsensi(Absensi object) async {
-    int result = await dbHelper.delete(object.id);
+    int result = await dbHelper.delete(object.id!);
     if (result > 0) {
       _updateListview();
     }
